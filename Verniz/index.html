@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verniz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="/images/hero-image.png" alt="Hero Image" />
+      <h1>Verniz</h1>
+    </section>
+
+    <!-- Navigation Section -->
+    <nav>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <!-- Add more navigation items as needed -->
+      </ul>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <!-- Add more navigation items as needed -->
+      </ul>
+      <ul>
+        <li><a href="#Order">Order Now</a></li>
+        <!-- Add more navigation items as needed -->
+      </ul>
+    </nav>
+
+    <!-- Product Showcase Section -->
+    <section id="products" class="product-showcase">
+      <h2>Our Products</h2>
+
+      <!-- Product Grid -->
+      <div class="product-grid">
+        <!-- Product 1: Armchair -->
+        <model-viewer
+          src="/models/armchair.glb"
+          alt="Armchair"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          poster="/imagesposter-armchair.png"
+          shadow-intensity="1"
+          camera-orbit="-127.6deg 77.77deg 0.1294m"
+          field-of-view="30deg"
+        >
+          <!-- Hotspots for Armchair -->
+          <button
+            class="Hotspot"
+            slot="hotspot-1"
+            data-position="-0.014836660763374452m 0.033142284072590115m 0.08920955526375268m"
+            data-normal="-0.9600487495457936m 0.000001233931525223232m 0.2798328045352005m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">
+              Hand carved oak wood made by experts
+            </div>
+          </button>
+          <button
+            class="Hotspot"
+            slot="hotspot-2"
+            data-position="-0.03915521384473543m 0.012809101450670053m 0.07354341791728745m"
+            data-normal="-0.07962669998824183m 0.9586612064126752m -0.2731817709298641m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">
+              Intertwined silk sheets for maximum comfort
+            </div>
+          </button>
+          <!-- Progress Bar -->
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <!-- AR Button -->
+          <button slot="ar-button" id="ar-button">View in your space</button>
+          <!-- AR Prompt -->
+          <div id="ar-prompt">
+            <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
+          </div>
+        </model-viewer>
+
+        <!-- Product 2: Chair -->
+        <model-viewer
+          src="/models/chair.glb"
+          alt="Chair"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          poster="/images/poster-chair.png"
+          shadow-intensity="1"
+          environment-image="legacy"
+        >
+          <!-- Hotspots for Chair -->
+          <button
+            class="Hotspot"
+            slot="hotspot-1"
+            data-position="-0.3549962157414823m 1.2436552282187119m -0.5365836363243188m"
+            data-normal="0.7655780704725003m 0.5790435586198817m 0.28035473106838615m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">White leather finish</div>
+          </button>
+          <!-- Progress Bar -->
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <!-- AR Button -->
+          <button slot="ar-button" id="ar-button">View in your space</button>
+          <!-- AR Prompt -->
+          <div id="ar-prompt">
+            <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
+          </div>
+        </model-viewer>
+
+        <!-- Product 3: Puff -->
+        <model-viewer
+          src="/models/puff.glb"
+          alt="Puff"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          poster="/images/poster-puff.png"
+          shadow-intensity="1"
+          camera-orbit="49.25deg 73.89deg 0.1138m"
+          field-of-view="30deg"
+        >
+          <!-- Hotspots for Puff -->
+          <button
+            class="Hotspot"
+            slot="hotspot-1"
+            data-position="0.01861126169466428m 0.020516085210984886m -0.047773483935039975m"
+            data-normal="0.1599966488854848m 0.820586883933448m 0.5486695164320766m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">
+              Super soft foam insides for maximum comfort
+            </div>
+          </button>
+          <!-- Progress Bar -->
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <!-- AR Button -->
+          <button slot="ar-button" id="ar-button">View in your space</button>
+          <!-- AR Prompt -->
+          <div id="ar-prompt">
+            <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
+          </div>
+        </model-viewer>
+      </div>
+    </div>
+
+    <!-- Product Information Row -->
+    <div class="product-info-row">
+
+        <!-- Product 1 Information -->
+        <div class="product-info">
+            <h3>Comfort Armchair</h3>
+            <p>Hand-carved oak wood made by experts. Intertwined silk sheets for maximum comfort.</p>
+            <p class="price">Price: $499.99</p>
+        </div>
+
+        <!-- Product 2 Information -->
+        <div class="product-info">
+            <h3>Elegant Chair</h3>
+            <p>White leather finish. Perfect addition to any modern interior.</p>
+            <p class="price">Price: $299.99</p>
+        </div>
+
+        <!-- Product 3 Information -->
+        <div class="product-info">
+            <h3>Cozy Puff</h3>
+            <p>Super soft foam insides for maximum comfort. Stylish addition to your living space.</p>
+            <p class="price">Price: $199.99</p>
+        </div>
+
+    </div>
+
+</div>
+    </section>
+    <!-- Footer Section -->
+<footer>
+  <div class="footer-content">
+      <div class="contact-info">
+          <h4>Contact Us</h4>
+          <p>Email: info@vernizfurniture.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+      </div>
+      <div class="social-media">
+          <h4>Follow Us</h4>
+          <!-- Add your social media icons and links here -->
+          <a href="#" target="_blank"><img src="path/to/facebook-icon.png" alt="Facebook"></a>
+          <a href="#" target="_blank"><img src="path/to/twitter-icon.png" alt="Twitter"></a>
+          <a href="#" target="_blank"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2023 Verniz Furniture. All rights reserved.</p>
+  </div>
+</footer>
+
+  </body>
+</html>
